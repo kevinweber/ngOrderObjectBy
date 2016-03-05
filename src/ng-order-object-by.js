@@ -40,8 +40,8 @@
 
             return comparator;
           });
-
-          if (reverse) {
+          
+          if (reverse && reverse !== 'asc' && reverse !== 'ascending' && reverse !== false) {
             filtered.reverse();
           }
 
